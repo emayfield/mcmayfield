@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <title>Tati and Dan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -15,6 +12,10 @@
     <style>
       body { padding-top: 50px; }
       h2 { padding-top: 50px; }
+      .container {
+        margin: 0 auto;
+        max-width: 800px;
+      }
     </style>
   </head>
   <body>
@@ -46,15 +47,11 @@
               <li><a href="#registry">Registry</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        </div><!-- /.container -->
       </nav>
 
-      <!-- <div class="jumbotron"> -->
       <h1 class="project-name">Tati and Dan</h1>
       <h2 class="project-tagline">... are getting married</h2>
-      <!-- </div> -->
-
-      <p>note this is not live yet, more info to come, you know</p>
 
       <img class="img-responsive" src="images/baybridge.jpg" width="800" height="600" />
       
@@ -123,9 +120,10 @@
       <p>You can stay in someone's spare bedroom, or in some cases rent their full apartment. It's usually a lot cheaper and more interesting than a hotel. <a href="https://www.airbnb.com/c/dtasse?s=8">Sign up here</a> and we both get $20 off.</p>
       <h4>Map</h4>
       (We've got some other layers, including just fun things to do; click the icon in the top right to find those layers) <br />
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=ziHzkj9eHJZw.kO_Z-ggWauWA" width="640" height="480"></iframe>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=ziHzkj9eHJZw.kO_Z-ggWauWA" width="640" height="480"></iframe>
+      </div>
 
-      <p><!-- hacky p tag to make linking to the transportation anchor work --></p>
       <a id="transportation" class="anchor"> </a>
       <h2>Transportation</h2>
       <p>For transportation to and from the wedding, there will be a shuttle to/from the Priory hotel, and for everyone else, we will give you a code for free Uber rides to and from the Mattress Factory. (Uber is an app that lets you hire people to drive you, like a taxi. If you don't have an Uber account, <a href="https://www.uber.com/invite/bp4lq">sign up now!</a>)</p>
@@ -139,7 +137,9 @@
       <a id="rsvp" class="anchor"> </a>
       <h2>RSVP</h2>
         <p>Please RSVP by May 24. If you're staying at the Priory, note that they have an earlier deadline of May 10 to get a reserved room at our rates.</p>
-        <iframe src="https://docs.google.com/forms/d/1rqnRl4vd3DojbP1FnY0EyCKNqNk9NHSxDtvunCQcLUY/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/1rqnRl4vd3DojbP1FnY0EyCKNqNk9NHSxDtvunCQcLUY/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
 
       <p><!-- hacky p tag to make linking to the registry anchor work --></p>
       <a id="registry" class="anchor"> </a>
